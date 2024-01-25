@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Deploy Flask app 
         uses: appleboy/ssh-action@master
-        with:
+        with: 
           host: ${{ secrets.HOST_DNS }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
